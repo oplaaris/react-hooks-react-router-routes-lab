@@ -5,9 +5,20 @@ import Home from "./Home";
 import Actors from "./Actors";
 import Directors from "./Directors";
 import Movies from "./Movies";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
-  return <div>{/*{code here}*/}</div>;
+  return <div>{
+    function NavBar(){return(  
+      <div className="navbar">
+        <NavLink to ="/">Home</NavLink>
+        <NavLink to ="/movies">Movies</NavLink>
+        <NavLink to ="/directors">Directors</NavLink>
+        <NavLink to ="/actors">Actors</NavLink>
+       </div>
+    )}
+    }</div>;
 }
+
 
 export default App;
